@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio Homepage</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+
+        <div class="nav-wrapper">
+            <div class="left-side">
+                <div class="nav-link-wrapper active-nav-link">
+                    <a href="index.html">Home</a>
+                </div>
+                <div class="nav-link-wrapper">
+                    <a href="about.html">About</a>
+                </div>
+                <div class="nav-link-wrapper">
+                    <a href="resume.html">Resume</a>
+                </div>
+            
+            </div>
+           <div class="right-side">
+               <div class="brand">
+                    <div>INES BOSCH-ALFONSO</div>
+               </div>
+            </div>
+        </div>
+        
+        <div class="content-wrapper">
+            <div class="portfolio-items-wrapper">
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style = "background-image:url(images/ontario-logo.jpg)"></div>
+                  <div class="img-text-wrapper">
+                      <div class="subtitle">
+                          Worked as a Web Development Assistant for Ontario Public Service at the Ministry of Government and Consumer Services during Summer 2020. 
+                      </div>
+                  </div>
+              </div>
+
+                <div class="portfolio-item-wrapper">
+                      <div class="portfolio-img-background" style = "background-image:url(images/features.png)"></div>
+                    <div class="img-text-wrapper">
+                        <div class="subtitle">
+                            Created in a team of 3 a Geographic Information System (GIS) software program that visualizes 
+                            and solves travel and optimization problems in any city of the world.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style = "background-image:url(images/birdiemower.jpg)"></div>
+                  <div class="img-text-wrapper">
+                      <div class="subtitle">
+                        During first year worked on a design project for the course Praxis II.
+                      </div>
+                  </div>
+              </div>
+              
+              <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style = "background-image:url(images/design.png)"></div>
+                    <div class="img-text-wrapper">
+                        <div class="subtitle">
+                      As part of Praxis II; a first year engineering design course, I created a personal design process to describe what I had learnt during the semester.
+                        </div>
+                    </div>
+                </div>
+
+              <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style = "background-image:url(images/seek.jpg)"></div>
+                    <div class="img-text-wrapper">
+                        <div class="subtitle">
+                            Created a semi-autonomous robot in 12 hours for the SEEK Hackathon in a group of 3. Worked in a team of 3 and reached semi-finals.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style = "background-image:url(images/dentist.jpg)"></div>
+                        <div class="img-text-wrapper">
+                            <div class="subtitle">
+                                During the Summer of 2016 I worked as a clerical assistant in Dr. Tony Canal's Dental Clinic.
+                            </div>
+                        </div>
+                    </div>
+          </div>
+                
+            
+        </div>
+
+    </div>
+</body>
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover',() =>{
+          portfolioItem.childNodes[1].classList.add('img-darken');  
+        })
+    })
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseout',() =>{
+          portfolioItem.childNodes[1].classList.remove('img-darken');  
+        })
+    })
+</script>
+</html>
