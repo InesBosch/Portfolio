@@ -10,6 +10,24 @@ body {
     grid-template-columns: 1fr;
 }
 
+.header{
+    width: 100%;
+    margin-bottom: 2%;
+    width: 100vw;
+    background-position:left top;
+    background-image:url(images/header.png);
+    text-align: center;
+    color:white;
+    font-size: 2rem;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-repeat:no-repeat;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+}
+
 /*Nav styles*/
 
 /*Separating Home/About and Name*/
@@ -17,7 +35,8 @@ body {
 .nav-wrapper{
     display: flex;
     justify-content: space-between;
-    padding: 38px;
+    background: #3B5998;
+    padding: 44px;
 }
 
 .left-side{
@@ -102,7 +121,7 @@ body {
 }
 .img-text-wrapper:hover .subtitle{
     font-weight: 600;
-    color: lightseagreen;
+    color: #0b7dda;
 }
 
 .img-darken {
@@ -112,20 +131,44 @@ body {
 
 /*About Page*/
 
-.two-column-wrapper{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.profile-image-wrapper img{
-    width: 100%;
-}
-
 .profile-content-wrapper{
+    text-align: center;
     padding: 30px;
 }
-.profile-content-wrapper h1{
-    color: lightseagreen;
+/* Style all font awesome icons */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
 }
+  
+  /* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+/* Set a specific color for each brand */
 
-
+/* Github */
+.fa-github {
+    color: white;
+}
+  
+  /* LinkedIn */
+.fa-linkedin {
+    color: white;
+}
+.btn {
+    padding: 20px;
+    font-size: 20px;
+    width: 80px;
+    text-align: center;
+    text-decoration: none;
+    border: 5px solid;
+    border-radius: 5%;
+    border-color: #2196F3;
+    background-color: white;
+}
+.btn:hover {background-color: #0b7dda;}
