@@ -3,6 +3,7 @@
 body {
     font-family: "Quicksand",sans-serif;
     margin: 0px; /*to get images directly to side of page*/
+    background-image: linear-gradient(to bottom right, #3B5998, pink);
 }
 
 .container {
@@ -13,19 +14,29 @@ body {
 .header{
     width: 100%;
     margin-bottom: 2%;
-    width: 100vw;
-    background-position:left top;
-    background-image:url(images/header.png);
     text-align: center;
     color:white;
     font-size: 2rem;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    background-repeat:no-repeat;
-    -webkit-background-size:cover;
-    -moz-background-size:cover;
-    -o-background-size:cover;
-    background-size:cover;
+    padding-top: 2%;
+}
+
+.header p{
+    font-size: 1rem;
+    font-family: 'Press Start 2P', cursive;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em none; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
 }
 
 /*Nav styles*/
@@ -35,7 +46,7 @@ body {
 .nav-wrapper{
     display: flex;
     justify-content: space-between;
-    background: #3B5998;
+    background: black;
     padding: 44px;
 }
 
@@ -43,47 +54,11 @@ body {
     display: flex;
 }
 
-/*Setting Home/About to all caps*/
-
-.nav-wrapper > .left-side > div{
-    margin-right: 20px;
-    font-size: 0.9em;
-    text-transform: uppercase;
-}
-
-.nav-link-wrapper{
-    height: 22px;
-    border-bottom: 1px solid transparent;
-    transition: border-bottom 0.5s;
-}
-
-/*Setting original colour of names to grey*/
-
-.nav-link-wrapper a{
-    color: #8a8a8a;
-    text-decoration: none;
-    transition: color 0.5s;
-}
-
-/*To change colours when hovering over Home and About*/
-
-.nav-link-wrapper:hover{
-    border-bottom: 1px solid black;
-}
-
-.nav-link-wrapper a:hover{
-    color: black;
-}
-
-.active-nav-link{
-    border-bottom: 1px solid black;
-}
-
-.active-nav-link a{
-    color: black !important;
-}
-
 /*Portfolio styles*/
+
+.content-wrapper{
+    padding:2%;
+}
 
 .portfolio-items-wrapper{
     display: grid;
@@ -133,7 +108,7 @@ body {
 
 .profile-content-wrapper{
     text-align: center;
-    padding: 30px;
+    padding: 2%;
 }
 /* Style all font awesome icons */
 .fa {
@@ -161,6 +136,7 @@ body {
     color: white;
 }
 .btn {
+    color:black;
     padding: 20px;
     font-size: 20px;
     width: 80px;
@@ -168,7 +144,11 @@ body {
     text-decoration: none;
     border: 5px solid;
     border-radius: 5%;
-    border-color: #2196F3;
+    border-color: #3B5998;
     background-color: white;
 }
-.btn:hover {background-color: #0b7dda;}
+.btn:hover {background-color: #3B5998;}
+
+footer {
+    text-align: center;
+}
