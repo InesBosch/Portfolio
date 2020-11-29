@@ -2,13 +2,14 @@
 
 body {
     font-family: "Quicksand",sans-serif;
-    margin: 0px; /*to get images directly to side of page*/
+    margin: 0; /*to get images directly to side of page*/
     background-image: linear-gradient(to bottom right, #3B5998, pink);
 }
 
 .container {
     display: grid;
     grid-template-columns: 1fr;
+    overflow: hidden;
 }
 
 .header{
@@ -29,7 +30,7 @@ body {
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: .15em; /* Adjust as needed */
     animation: 
-      typing 3.5s steps(40, end),
+      typing 3.5s steps(60, end),
       blink-caret .75s step-end infinite;
   }
   
