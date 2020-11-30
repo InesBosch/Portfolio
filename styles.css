@@ -1,7 +1,7 @@
 /*Master styles*/
 
 body {
-    font-family: "Quicksand",sans-serif;
+    font-family: "Rubik",sans-serif;
     margin: 0; /*to get images directly to side of page*/
     background-image: linear-gradient(to bottom right, #3B5998, pink);
 }
@@ -13,6 +13,7 @@ body {
 }
 
 .header{
+    font-family: "Russo One",sans-serif;
     width: 100%;
     margin-bottom: 2%;
     text-align: center;
@@ -42,8 +43,6 @@ body {
 
 /*Nav styles*/
 
-/*Separating Home/About and Name*/
-
 .nav-wrapper{
     display: flex;
     justify-content: space-between;
@@ -53,6 +52,21 @@ body {
 
 .left-side{
     display: flex;
+}
+
+.blink a{
+    color: #000;
+    font-weight: bold;
+    font-size: 2rem;
+    animation: blinkingText 2s infinite;
+}
+
+@keyframes blinkingText{
+    0%		{ color: #10c018;}
+    25%		{ color: #1056c0;}
+    50%		{ color: #ef0a1a;}
+    75%		{ color: #254878;}
+    100%	{ color: #04a1d5;}
 }
 
 /*Portfolio styles*/
@@ -86,8 +100,8 @@ body {
     justify-content: center;
     align-items: center;
     height: 100%;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .img-text-wrapper .subtitle{
